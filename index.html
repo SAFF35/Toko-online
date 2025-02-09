@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Handpone Galaxsi</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header: Judul (HT dan PT) -->
+  <header>
+    <h1 class="ht pt">Handpone Galaxsi</h1>
+  </header>
+
+  <!-- Slider gambar (dapat digeser kanan-kiri) -->
+  <div class="slider">
+    <button class="slider-btn prev" onclick="prevSlide()">&#10094;</button>
+    <div class="slides">
+      <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241120_173812.png?w=1024" class="slide active" alt="Gambar 1">
+      <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241120_173757.png?w=1024" class="slide" alt="Gambar 2">
+      <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241120_173630.png?w=1024" class="slide" alt="Gambar 3">
+      <img src="https://affiliate035.wordpress.com/wp-content/uploads/2024/12/20241120_180325.png?w=1024" class="slide" alt="Gambar 4">
+    </div>
+    <button class="slider-btn next" onclick="nextSlide()">&#10095;</button>
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Teks Handpone Samsung Galaxi (HT) -->
+  <h2 class="ht pt">Handpone Samsung Galaxi</h2>
+
+  <!-- Harga: Coret Rp 100.000 (HT) dan Rp 50.000 (HT, PT) -->
+  <div class="price pt">
+    <span class="ht"><s>Rp 100.000</s></span> &nbsp;
+    <span class="ht">Rp 50.000</span>
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Teks tambahan -->
+  <div class="additional-text pt">
+    <p>G1 = 10.000</p>
+    <p>G2 - G10 = 1.000</p>
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Tombol Deskripsi -->
+  <div class="pt">
+    <button id="desc-toggle" class="desc-btn" onclick="toggleDescription()">Deskripsi</button>
+  </div>
+  <!-- Container deskripsi tersembunyi (HT, RT, margin 36px) -->
+  <div id="description" class="description ht rt" style="display:none; margin-left:36px;">
+    <p>
+      Oh kitu bu.. menurut abdi mah sugan alim cerita ka Ibu sieun Ibu kawatir.. soalna Gina ge peenah carita Ibu mah terlalu kawatir trus janten kitu prasangka na seperti ka rerencangan gina ibu kawatir bae.. contohna. Janten alim seur carita ka Ibu bisi Ibu kawatir jeng sedih.. menurut abdi mah kitu ka dua oge kin gina janten tambah cape mun carita ka Ibu bisi ibu kahwatir trua pasti janten panjang nyariosna.. soalna pernah nyarios kitu.. Gina mah sieun Ibu kawatir.. mentak kitu nyarios ka Ibu ge. da sabener namah alim nyarios kitu ngan supados Ibu ulah kawairan deui ngan Cara na gina sareng nyariosna bae nu salah.. sehingga Ibu janten salah sangka:
+    </p>
+    <ul style="margin-left:36px; text-align:left;">
+      <li>oncom</li>
+      <li>tahu</li>
+      <li>tempe</li>
+      <li>gehu</li>
+    </ul>
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Formulir Beli Sekarangi -->
+  <!-- Pastikan form ini memiliki id "order-form" dengan method GET dan action menuju checkout.html -->
+  <form id="order-form" action="checkout.html" method="GET">
+    <h2 class="pt">Beli Sekarangi</h2>
+
+    <!-- Nama -->
+    <div class="form-group ht">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" required>
+    </div>
+
+    <!-- Alamat Lengkap (textarea dengan 3 baris) -->
+    <div class="form-group ht">
+      <label for="alamat">Alamat Lengkap:</label>
+      <textarea id="alamat" name="alamat" rows="3" required></textarea>
+    </div>
+
+    <!-- Nomor WA -->
+    <div class="form-group ht">
+      <label for="no_wa">Nomor WA:</label>
+      <input type="text" id="no_wa" name="no_wa" required>
+    </div>
+
+    <!-- Warna (checkbox) -->
+    <div class="form-group ht">
+      <label>Warna:</label><br>
+      <input type="checkbox" id="warna_kuning" name="warna[]" value="kuning">
+      <label for="warna_kuning">Kuning</label>
+      <input type="checkbox" id="warna_coklat" name="warna[]" value="coklat">
+      <label for="warna_coklat">Coklat</label>
+      <input type="checkbox" id="warna_merah" name="warna[]" value="merah">
+      <label for="warna_merah">Merah</label>
+    </div>
+
+    <!-- Ukuran (radio button) -->
+    <div class="form-group ht">
+      <label>Ukuran:</label><br>
+      <input type="radio" id="ukuran_m" name="ukuran" value="M" required>
+      <label for="ukuran_m">M Rp 50.000</label>
+      <input type="radio" id="ukuran_l" name="ukuran" value="L">
+      <label for="ukuran_l">L Rp 52.000</label>
+      <input type="radio" id="ukuran_xl" name="ukuran" value="XL">
+      <label for="ukuran_xl">XL Rp 54.000</label>
+      <input type="radio" id="ukuran_xxl" name="ukuran" value="XXL">
+      <label for="ukuran_xxl">XXL Rp 56.000</label>
+    </div>
+
+    <!-- Proteksi Kerusakan (checkbox) -->
+    <div class="form-group ht">
+      <input type="checkbox" id="proteksi" name="proteksi" value="yes">
+      <label for="proteksi">Proteksi Kerusakan Rp 8.000</label>
+    </div>
+
+    <!-- Pengiriman (radio button) -->
+    <div class="form-group ht">
+      <label>Pengiriman:</label><br>
+      <input type="radio" id="pengiriman_reguler" name="pengiriman" value="reguler" required>
+      <label for="pengiriman_reguler">Reguler Rp 8.000</label>
+      <input type="radio" id="pengiriman_instan" name="pengiriman" value="instan">
+      <label for="pengiriman_instan">Instan Rp 25.000</label>
+    </div>
+
+    <!-- Jumlah (radio button dari 1 sampai 20 dalam 4 baris) -->
+    <div class="form-group ht">
+      <label>Jumlah:</label><br>
+      <div class="jumlah-group">
+        <div class="jumlah-row">
+          <input type="radio" id="jumlah1" name="jumlah" value="1" required>
+          <label for="jumlah1">1</label>
+          <input type="radio" id="jumlah2" name="jumlah" value="2">
+          <label for="jumlah2">2</label>
+          <input type="radio" id="jumlah3" name="jumlah" value="3">
+          <label for="jumlah3">3</label>
+          <input type="radio" id="jumlah4" name="jumlah" value="4">
+          <label for="jumlah4">4</label>
+          <input type="radio" id="jumlah5" name="jumlah" value="5">
+          <label for="jumlah5">5</label>
+        </div>
+        <div class="jumlah-row">
+          <input type="radio" id="jumlah6" name="jumlah" value="6">
+          <label for="jumlah6">6</label>
+          <input type="radio" id="jumlah7" name="jumlah" value="7">
+          <label for="jumlah7">7</label>
+          <input type="radio" id="jumlah8" name="jumlah" value="8">
+          <label for="jumlah8">8</label>
+          <input type="radio" id="jumlah9" name="jumlah" value="9">
+          <label for="jumlah9">9</label>
+          <input type="radio" id="jumlah10" name="jumlah" value="10">
+          <label for="jumlah10">10</label>
+        </div>
+        <div class="jumlah-row">
+          <input type="radio" id="jumlah11" name="jumlah" value="11">
+          <label for="jumlah11">11</label>
+          <input type="radio" id="jumlah12" name="jumlah" value="12">
+          <label for="jumlah12">12</label>
+          <input type="radio" id="jumlah13" name="jumlah" value="13">
+          <label for="jumlah13">13</label>
+          <input type="radio" id="jumlah14" name="jumlah" value="14">
+          <label for="jumlah14">14</label>
+          <input type="radio" id="jumlah15" name="jumlah" value="15">
+          <label for="jumlah15">15</label>
+        </div>
+        <div class="jumlah-row">
+          <input type="radio" id="jumlah16" name="jumlah" value="16">
+          <label for="jumlah16">16</label>
+          <input type="radio" id="jumlah17" name="jumlah" value="17">
+          <label for="jumlah17">17</label>
+          <input type="radio" id="jumlah18" name="jumlah" value="18">
+          <label for="jumlah18">18</label>
+          <input type="radio" id="jumlah19" name="jumlah" value="19">
+          <label for="jumlah19">19</label>
+          <input type="radio" id="jumlah20" name="jumlah" value="20">
+          <label for="jumlah20">20</label>
+        </div>
+      </div>
+    </div>
+
+    <div class="br"></div>
+
+    <!-- Tombol Check Out (HT dan PT) -->
+    <div class="pt">
+      <button type="submit" class="checkout-btn ht pt">Check Out</button>
+    </div>
+  </form>
+
+  <!-- Script JS untuk form dan slider -->
+  <script src="script.js"></script>
+  <script>
+    // Fungsi slider sederhana
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.style.display = i === index ? 'block' : 'none';
+      });
+    }
+
+    function nextSlide() {
+      currentSlide = (currentSlide + 1) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    function prevSlide() {
+      currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+      showSlide(currentSlide);
+    }
+
+    // Inisialisasi slider
+    showSlide(currentSlide);
+
+    // Fungsi toggle deskripsi
+    function toggleDescription() {
+      const desc = document.getElementById('description');
+      if (desc.style.display === 'none' || desc.style.display === '') {
+        desc.style.display = 'block';
+      } else {
+        desc.style.display = 'none';
+      }
+    }
+  </script>
+</body>
+</html>
