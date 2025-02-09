@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rincian Pembayaran</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Judul halaman checkout -->
+  <header>
+    <h1 class="ht rt">Rincian Pembayaran</h1>
+  </header>
+
+  <!-- Bagian rincian pembayaran yang akan diisi otomatis -->
+  <div id="order-summary" class="order-summary rt">
+    <!-- Data akan ditampilkan oleh checkout.js -->
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Tombol ORDER dan Check Out via WhatsApp -->
+  <div class="pt">
+    <button id="order-btn" class="order-btn ht pt">ORDER</button>
+    <button id="whatsapp-btn" class="whatsapp-btn ht pt">Check Out via WhatsApp</button>
+  </div>
+
+  <div class="br"></div>
+
+  <!-- Informasi transfer bank (HT, RT, warna LB) -->
+  <div class="bank-info ht rt lb">
+    <p>Lalu Transfer ke Nomor Rekening</p>
+    <p>Bank BSI 089765555</p>
+    <p>AN Hilman Hayatuloh (CEO SAF)</p>
+    <p>Ewallet Dana 089522704503 AN Hil*** Hay***</p>
+    <p>
+      Selain Nomor Rek AN Hilman Hayatuloh dan nomor Ewallet Dana di atas,
+      dipastikan itu adalah Penipuan. Kami tidak bertanggung jawab bila hal yang tidak diinginkan terjadi.
+    </p>
+  </div>
+
+  <!-- Memanggil checkout.js -->
+  <script src="checkout.js"></script>
+</body>
+</html>
