@@ -1,0 +1,128 @@
+/* style.css */
+
+/* Pengaturan dasar body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+/* Header */
+header h1 {
+  color: #800000; /* warna maroon */
+}
+
+/* Kelas format teks */
+.ht {
+  font-weight: bold;
+}
+.pt {
+  text-align: center;
+}
+.rt {
+  text-align: left;
+}
+.lb {
+  color: #800000; /* warna maroon untuk teks informasi */
+}
+.br {
+  margin: 20px 0;
+}
+
+/* Slider */
+.slider {
+  position: relative;
+  max-width: 600px;
+  margin: auto;
+}
+.slides img {
+  width: 100%;
+  display: none;
+}
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(128, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+.slider-btn:hover {
+  background-color: rgba(128, 0, 0, 0.9);
+}
+.prev {
+  left: 0;
+}
+.next {
+  right: 0;
+}
+
+/* Formulir */
+form {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #800000;
+  border-radius: 8px;
+}
+.form-group {
+  margin-bottom: 15px;
+}
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+.form-group input[type="text"],
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Kelompok jumlah (1-20) */
+.jumlah-group {
+  display: flex;
+  flex-direction: column;
+}
+.jumlah-row {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 5px;
+}
+
+/* Tombol */
+.checkout-btn,
+.order-btn,
+.whatsapp-btn {
+  background-color: #800000;
+  color: #fff;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkout-btn:hover,
+.order-btn:hover,
+.whatsapp-btn:hover {
+  background-color: #a00000;
+}
+
+/* Order summary di checkout.html */
+.order-summary {
+  max-width: 600px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border: 2px solid #800000;
+  border-radius: 8px;
+}
+.order-summary p {
+  margin: 8px 0;
+}
